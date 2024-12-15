@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Mì Chai - Sợi Mì Mềm Mại</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Màn hình Menu Chính -->
+    <div id="menu">
+        <h1>Mì Chai</h1>
+        <button id="startBtn">Bắt Đầu</button>
+        <p>Sử dụng phím mũi tên hoặc các nút điều khiển trên màn hình để di chuyển.</p>
+    </div>
+
+    <!-- Bao bọc Trò Chơi -->
+    <div id="gameContainer" class="hidden">
+        <canvas id="gameCanvas"></canvas>
+        <div id="scoreBoard">Điểm: 0</div>
+        <div id="gameOver" class="hidden">
+            <h1>Game Over</h1>
+            <p>Điểm của bạn: <span id="finalScore">0</span></p>
+            <button id="restartBtn">Chơi Lại</button>
+        </div>
+        <!-- Các nút điều khiển cho thiết bị cảm ứng -->
+        <div id="controls">
+            <button id="btnUp">↑</button>
+            <div>
+                <button id="btnLeft">←</button>
+                <button id="btnDown">↓</button>
+                <button id="btnRight">→</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
